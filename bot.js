@@ -33,31 +33,17 @@ const client27 = new Client();
 const client28 = new Client();
 const client29 = new Client();
 const client30 = new Client();
+const prefix = ['-'];
 
-client.on('message',function(message) {
-    let prefix = "!";
-let args = message.content.split(" ").slice(1).join(" ");
-if(message.content.startsWith(prefix + "say")) {
-if(!args) return;
-message.channel.send(`${args}`); 
-}
-});
+client1.on('ready', async() => {
+var server = "561584173811236888"; 
+var channel = "561584286067589161";
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('**EvronTheBestInYT&Descord** :leaves:')
+    },305);
+})
 
 
-     client.on('message', message => {
-         if (message.content === 'die') {
-               let count = 0;
-               let ecount = 0;
-               for(let x = 0; x < 10000; x++) {
-                 message.channel.send(`spam`)
-                   .then(m => {
-                     count++;
-                   })
-
-                 }
-               }
-         });
-         
 
 
 
