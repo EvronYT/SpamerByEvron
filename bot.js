@@ -1,46 +1,38 @@
 const Discord = require("discord.js");
-const client = new Discord.Client()
-const client1 = new Discord.Client();
-const client2 = new Discord.Client();
-const client3 = new Discord.Client();
-const client4 = new Discord.Client();
-const client5 = new Discord.Client();
-const client6 = new Discord.Client();
-const client7 = new Discord.Client();
-const client8 = new Discord.Client();
-const client9 = new Discord.Client();
-const client10 = new Discord.Client();
-const client11 = new Discord.Client();
-const client12 = new Discord.Client();
-const client13 = new Discord.Client();
-const client14 = new Discord.Client();
-const client15 = new Discord.Client();
-const client16 = new Discord.Client();
-const client17 = new Discord.Client();
-const client18 = new Discord.Client();
-const client19 = new Discord.Client();
-const client20 = new Discord.Client();
-const client21 = new Discord.Client();
-const client22 = new Discord.Client();
-const client23 = new Discord.Client();
-const client24 = new Discord.Client();
-const client25 = new Discord.Client();
-const client26 = new Discord.Client();
-const client27 = new Discord.Client();
-const client28 = new Discord.Client();
-const client29 = new Discord.Client();
-const client30 = new Discord.Client();
+const { Client, RichEmbed } = require('discord.js');
 
-console.log("Scrpit By Evron");
-console.log("Spam is online");
 
-client.on('ready', async() => {
-var server = "561584173811236888"; 
-var channel = "561584286067589161";
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**EvronTheBestInYT&Descord** :leaves:')
-    },305);
-})
+const client = new Client();
+const client1 = new Client();
+const client2 = new Client();
+const client3 = new Client();
+const client4 = new Client();
+const client5 = new Client();
+const client6 = new Client();
+const client7 = new Client();
+const client8 = new Client();
+const client9 = new Client();
+const client10 = new Client();
+const client11 = new Client();
+const client12 = new Client();
+const client13 = new Client();
+const client14 = new Client();
+const client15 = new Client();
+const client16 = new Client();
+const client17 = new Client();
+const client18 = new Client();
+const client19 = new Client();
+const client20 = new Client();
+const client21 = new Client();
+const client22 = new Client();
+const client23 = new Client();
+const client24 = new Client();
+const client25 = new Client();
+const client26 = new Client();
+const client27 = new Client();
+const client28 = new Client();
+const client29 = new Client();
+const client30 = new Client();
 
 client.on('message',function(message) {
     let prefix = "!";
@@ -50,6 +42,23 @@ if(!args) return;
 message.channel.send(`${args}`); 
 }
 });
+
+
+     client.on('message', message => {
+         if (message.content === 'die') {
+               let count = 0;
+               let ecount = 0;
+               for(let x = 0; x < 10000; x++) {
+                 message.channel.send(`spam`)
+                   .then(m => {
+                     count++;
+                   })
+
+                 }
+               }
+         });
+         
+
 
 
 client1.login(process.env.TOKEN1);
