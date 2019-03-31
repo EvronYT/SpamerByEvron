@@ -31,28 +31,15 @@ const client28 = new Discord.Client();
 const client29 = new Discord.Client();
 const client30 = new Discord.Client();
 
-   console.log(`----------------`);
-   console.log(`Credit Farmm - Script By : Evron `);
-   console.log(`----------------`);
-   console.log(`Loadinng`);
-   console.log(`Loadinng.`);
-   console.log(`Loadinng..`);
-   console.log(`Loadinng...`);
-   console.log(`Loadinng....`);
-   console.log(`Loadinng.....`);
-   console.log(`Loadinng......`);
-   console.log(`Loadinng.......`);
-   console.log(`Loadinng........`);
-   console.log(`This Bots Online ' `);
-   console.log(`بلش السبام ياعمري.`);
-   
-   
+console.log("Scrpit By Evron");
+console.log("Spam is online");
+
 client.on('ready', async() => {
 var server = "561584173811236888"; 
 var channel = "561584286067589161";
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**Evron :beers:  The Best :smoking:  Youtuber :heartpulse:  & Discorder :heartpulse: **')
-    },30);
+    client.guilds.get(server).channels.get(channel).send('**EvronTheBestInYT&Descord** :leaves:')
+    },305);
 })
 
 client.on('message',function(message) {
@@ -63,26 +50,6 @@ if(!args) return;
 message.channel.send(`${args}`); 
 }
 });
-client.on('message', message => {
-    if(message.content === 'يومي'){
-        message.channel.send('#daily')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === 'كريدت'){
-        message.channel.send('#credits')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === 'ريب'){
-        message.channel.send('#rep')
-    }
-});
-
-
-
 
 
 client1.login(process.env.TOKEN1);
