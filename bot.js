@@ -1,5 +1,35 @@
 const Discord = require("discord.js");
-const { client, client1, client2, client3, client4, client5, client6, client7, client8, client9, client10, client11, client12, client13, client14, client15, client16, client17, client18, client19, client20, client21, client22, client23, client24, client25, client26, client27, client28, client29, client30 } = new Discord.Client();
+
+const client1 = new Discord.Client();
+const client2 = new Discord.Client();
+const client3 = new Discord.Client();
+const client4 = new Discord.Client();
+const client5 = new Discord.Client();
+const client6 = new Discord.Client();
+const client7 = new Discord.Client();
+const client8 = new Discord.Client();
+const client9 = new Discord.Client();
+const client10 = new Discord.Client();
+const client11 = new Discord.Client();
+const client12 = new Discord.Client();
+const client13 = new Discord.Client();
+const client14 = new Discord.Client();
+const client15 = new Discord.Client();
+const client16 = new Discord.Client();
+const client17 = new Discord.Client();
+const client18 = new Discord.Client();
+const client19 = new Discord.Client();
+const client20 = new Discord.Client();
+const client21 = new Discord.Client();
+const client22 = new Discord.Client();
+const client23 = new Discord.Client();
+const client24 = new Discord.Client();
+const client25 = new Discord.Client();
+const client26 = new Discord.Client();
+const client27 = new Discord.Client();
+const client28 = new Discord.Client();
+const client29 = new Discord.Client();
+const client30 = new Discord.Client();
 
 console.log("Scrpit By Evron");
 console.log("Spam is online");
