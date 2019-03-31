@@ -34,7 +34,6 @@ const client30 = new Discord.client();
 
 
 
-
 client.on('ready', () => {
    console.log(`----------------`);
    console.log(`Credit Farmm - Script By : Evron `);
