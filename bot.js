@@ -31,12 +31,6 @@ const client28 = new Discord.Client();
 const client29 = new Discord.Client();
 const client30 = new Discord.Client();
 
-
-
-
-
-
-client.on('ready', () => {
    console.log(`----------------`);
    console.log(`Credit Farmm - Script By : Evron `);
    console.log(`----------------`);
@@ -51,17 +45,24 @@ client.on('ready', () => {
    console.log(`Loadinng........`);
    console.log(`This Bots Online ' `);
    console.log(`بلش السبام ياعمري.`);
-});
+   
+   
+client.on('ready', async() => {
+var server = "561584173811236888"; 
+var channel = "561584286067589161";
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('**Evron :beers:  The Best :smoking:  Youtuber :heartpulse:  & Discorder :heartpulse: **')
+    },30);
+})
 
 client.on('message',function(message) {
-    let prefix = "&";
+    let prefix = "!";
 let args = message.content.split(" ").slice(1).join(" ");
 if(message.content.startsWith(prefix + "say")) {
 if(!args) return;
 message.channel.send(`${args}`); 
 }
 });
-
 client.on('message', message => {
     if(message.content === 'يومي'){
         message.channel.send('#daily')
@@ -81,13 +82,6 @@ client.on('message', message => {
 });
 
 
-
-client.on("ready", () => {
-let channel =     client.channels.get("561584286067589161")
-setInterval(function() {
-channel.send(`**Evron :beers:  The Best :smoking:  Youtuber :heartpulse:  & Discorder :heartpulse: **`);
-}, 30)
-})
 
 
 
