@@ -15,7 +15,7 @@ tokens.forEach(token => {
 	
 	
 	
-	
+/*
 client.on('ready', async() => {
 var server = "561584173811236888"; 
 var channel = "561584286067589161";
@@ -32,8 +32,7 @@ if(!args) return;
 message.channel.send(`${args}`); 
 }
 });
-	
-	
+*/
 	
 	
 	
