@@ -15,6 +15,30 @@ tokens.forEach(token => {
 	
 	
 	
+	
+const adminprefix = "!";//Fras
+const devs = ['538100620238782464','538100620238782464'];//Fras
+client.on('message', message => {//Fras
+  var argresult = message.content.split(` `).slice(1).join(' ');//Fras
+    if (!devs.includes(message.author.id)) return;//Fras
+  if (message.content.startsWith(adminprefix + 'na')) {//Fras
+client.user.setUsername(argresult).then//Fras
+    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)//Fras
+return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");//Fras
+} else//Fras
+  if (message.content.startsWith(adminprefix + 'av')) {//Fras
+client.user.setAvatar(argresult);//Fras
+  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);//Fras
+      } else    //Fras 
+});//Fras
+	
+	
+	
+	
+	
+	
+	
+	
 /*
 client.on('ready', async() => {
 var server = "561584173811236888"; 
