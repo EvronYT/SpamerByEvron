@@ -16,34 +16,6 @@ tokens.forEach(token => {
 	
 	
 	
-const adminprefix = "!";//Fras
-const devs = ['538100620238782464','538100620238782464'];//Fras
-client.on('message', message => {//Fras
-  var argresult = message.content.split(` `).slice(1).join(' ');//Fras
-    if (!devs.includes(message.author.id)) return;//Fras
-    
-if (message.content.startsWith(adminprefix + 'play')) {//Fras
-  client.user.setGame(argresult);//Fras
-    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)//Fras
-} else //Fras
-  if (message.content.startsWith(adminprefix + 'name')) {//Fras
-client.user.setUsername(argresult).then//Fras
-    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)//Fras
-return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");//Fras
-} else//Fras
-  if (message.content.startsWith(adminprefix + 'avatar')) {//Fras
-client.user.setAvatar(argresult);//Fras
-  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);//Fras
-      } else    //Fras 
-if (message.content.startsWith(adminprefix + 'streaming')) {//Fras
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");//Fras
-    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)//Fras
-}//Fras
-});//Fras
-	
-	
-	
-	
 	
 	
 	
